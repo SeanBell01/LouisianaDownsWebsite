@@ -1,0 +1,61 @@
+body {
+  background: rgb(78, 65, 65);
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+header {
+  padding: 50px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+  gap: 50px;
+}
+
+.restaurant {
+  width: 350px;
+  background-color: #000000f5;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #818181;
+  margin-bottom: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.restaurant:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff;
+}
+
+.restaurant img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.restaurant h2 {
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.restaurant p {
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.restaurant a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 16
+}
+
+.highlight {
+  color: red;
+}
