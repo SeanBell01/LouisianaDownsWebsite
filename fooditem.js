@@ -5,8 +5,9 @@ const foodItem = [
     category: "appetizers",
     rating: 4.3,
     price: 10.0,
-    img: "#",
+    img: "images/hamburger.jpg",
     quantity: 1,
+    desc: "This Is the description",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const foodItem = [
     price: 10.0,
     img: "#",
     quantity: 1,
+    desc: "This Is the description",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const foodItem = [
     price: 8.0,
     img: "#",
     quantity: 1,
+    desc: "This Is the description",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const foodItem = [
     price: 18.0,
     img: "#",
     quantity: 1,
+    desc: "This Is the description",
   },
   {
     id: 5,
@@ -192,6 +196,15 @@ const foodItem = [
     id: 21,
     name: "Homemade Bread Pudding",
     category: "dessert",
+    rating: 4.3,
+    price: 10.0,
+    img: "#",
+    quantity: 1,
+  },
+  {
+    id: 22,
+    name: "Tea",
+    category: "drink",
     rating: 4.3,
     price: 10.0,
     img: "#",
