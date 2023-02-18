@@ -1,4 +1,4 @@
-import { foodItem } from "./fooditem.js";
+import { foodItem } from "../Js-file/fooditem.js";
 
 function displayItems() {
   var appetizers = document.getElementById("appetizers");
@@ -11,9 +11,7 @@ function displayItems() {
   var dessert = document.getElementById("dessert");
   var drink = document.getElementById("drink");
 
-  const appetizersData = foodItem.filter(
-    (item) => item.category == "appetizers"
-  );
+  const appetizersData = foodItem.filter((item) => item.category == "appetizers");
   const saladData = foodItem.filter((item) => item.category == "salad");
   const soupData = foodItem.filter((item) => item.category == "soup");
   const lineupData = foodItem.filter((item) => item.category == "lineup");
@@ -22,6 +20,7 @@ function displayItems() {
   const burgerData = foodItem.filter((item) => item.category == "burger");
   const dessertData = foodItem.filter((item) => item.category == "dessert");
   const drinkData = foodItem.filter((item) => item.category == "drink");
+
   appetizersData.map((item) => {
     var itemCard = document.createElement("div");
     itemCard.setAttribute("id", "item-card");
@@ -52,10 +51,15 @@ function displayItems() {
     itemPrice.setAttribute("id", "item-price");
     itemPrice.innerText = "Price : $ " + item.price;
 
+    var itemDesc = document.createElement("p");
+    itemDesc.setAttribute("id", "item-desc");
+    itemDesc.innerText = item.desc;
+
     itemCard.appendChild(cardTop);
     itemCard.appendChild(img);
     itemCard.appendChild(itemName);
     itemCard.appendChild(itemPrice);
+    itemCard.appendChild(itemDesc);
 
     appetizers.appendChild(itemCard);
   });
@@ -360,6 +364,7 @@ function displayItems() {
     itemCard.appendChild(img);
     itemCard.appendChild(itemName);
     itemCard.appendChild(itemPrice);
+    itemCard.appendChild(desc);
 
     drink.appendChild(itemCard);
   });
