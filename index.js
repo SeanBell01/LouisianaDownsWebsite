@@ -1,4 +1,4 @@
-import { foodItem } from "../Js-file/fooditem.js";
+import { foodItem } from "./fooditem3.js";
 
 function displayItems() {
   var appetizers = document.getElementById("appetizers");
@@ -11,7 +11,9 @@ function displayItems() {
   var dessert = document.getElementById("dessert");
   var drink = document.getElementById("drink");
 
-  const appetizersData = foodItem.filter((item) => item.category == "appetizers");
+  const appetizersData = foodItem.filter(
+    (item) => item.category == "appetizers"
+  );
   const saladData = foodItem.filter((item) => item.category == "salad");
   const soupData = foodItem.filter((item) => item.category == "soup");
   const lineupData = foodItem.filter((item) => item.category == "lineup");
@@ -364,7 +366,6 @@ function displayItems() {
     itemCard.appendChild(img);
     itemCard.appendChild(itemName);
     itemCard.appendChild(itemPrice);
-    itemCard.appendChild(desc);
 
     drink.appendChild(itemCard);
   });
