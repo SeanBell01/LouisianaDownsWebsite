@@ -8,6 +8,8 @@ const foodItem = [
     img: "images/hamburger.jpg",
     quantity: 1,
     desc: "This Is the description",
+    sauce: "Ranch",
+    sauce2: "Bleu Cheese"
   },
   {
     id: 2,
