@@ -1,4 +1,4 @@
-import { foodItem } from "./fooditem3.js";
+import { foodItem } from "./fooditem2.js";
 
 function displayItems() {
   var appetizers = document.getElementById("appetizers");
@@ -606,3 +606,21 @@ function addAddress() {
     alert("Address not added");
   }
 }
+
+document.addEventListener("click", (e) => {
+  const isDropdownbutton = e.target.matches("[data-dropdown-button]");
+  if (!isDropdownbutton && e.target.closes("[data-dropdown]") != null) return;
+
+  let currentDropdown;
+  if (isDropdownButton) {
+    currentDropdown = e.target.closes("[data-dropdown]");
+    currentDropdown.classList.toggle("active");
+  }
+
+  document
+    .querySelectorAll("[data-dropdown-button].active")
+    .forEach((dropdown) => {
+      if (dropdown === currentDropdown) return;
+      dropdown.classList.remove("active");
+    });
+});
